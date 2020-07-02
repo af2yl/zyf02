@@ -30,14 +30,14 @@ session.getAttribute("name")
         <tr>
             <td>1</td>
             <td>笔记本</td>
-            <td>￥8.0</td>
+            <td>￥5.0</td>
             <td><jsp:getProperty name = "car" property="num_apple" /></td>
             <td><jsp:getProperty name = "car" property="pri_apple" /></td>
         </tr>
         <tr>
             <td>2</td>
             <td>文具盒</td>
-            <td>￥10.0</td>
+            <td>￥3.0</td>
             <td><jsp:getProperty name = "car" property="num_orange" /></td>
             <td><jsp:getProperty name = "car" property="pri_orange" /></td>
         </tr>
@@ -51,7 +51,7 @@ session.getAttribute("name")
         <tr>
             <td>4</td>
             <td>胶带</td>
-            <td>￥2.5</td>
+            <td>￥4.5</td>
             <td><jsp:getProperty name = "car" property="num_grapefruit" /></td>
             <td><jsp:getProperty name = "car" property="pri_grapefruit" /></td>
         </tr>

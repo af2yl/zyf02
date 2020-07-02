@@ -19,7 +19,7 @@
     <h1>超级市场</h1>
     <p>开始选购商品并填写自己所购买的数量</p>
     <form action="order.jsp" method="post">
-        <table style="border:1px solid green;" cellpadding="0" border="1" align="center">
+        <table style="border:1px solid green;" cellpadding="0" border="0" align="center">
             <thead>
             <tr>
                 <th>商品编号</th>
@@ -32,13 +32,13 @@
             <tr>
                 <td>1</td>
                 <td><img src="${pageContext.request.contextPath}/images/notebook.jpg" height="100" width="100"/>笔记本</td>
-                <td>￥8.0</td>
+                <td>￥5.0</td>
                 <td><input type="text" name="notebook" id="1" placeholder="0"></td>
             </tr>
             <tr>
                 <td>2</td>
                 <td><img src="${pageContext.request.contextPath}/images/pencil%20case.jpg" height="100" width="100"/>文具盒</td>
-                <td>￥10.0</td>
+                <td>￥3.0</td>
                 <td><input type="text" name="pencil case" id="2" placeholder="0"></td>
             </tr>
             <tr>
@@ -50,7 +50,7 @@
             <tr>
                 <td>4</td>
                 <td><img src="${pageContext.request.contextPath}/images/packaging%20tape.jpg" height="100" width="100"/>胶带</td>
-                <td>￥2.5</td>
+                <td>￥4.5</td>
                 <td><input type="text" name="packaging tape" id="4" placeholder="0"></td>
             </tr>
             <tr>
@@ -62,8 +62,6 @@
             </tbody>
         </table>
         <input type="submit" value="提交订单">
-        <a href="order.jsp">提交订单</a>
-
     </form>
 </div>
 =======
