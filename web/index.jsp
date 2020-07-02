@@ -54,8 +54,6 @@
                 <td><input type="text" name="packaging tape" id="4" placeholder="0"></td>
             </tr>
             <tr>
-
-
                 <td>5</td>
                 <td><img src="${pageContext.request.contextPath}/images/eraser.jpg" height="100" width="100"/>橡皮</td>
                 <td>￥5.5</td>
