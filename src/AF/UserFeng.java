@@ -6,8 +6,7 @@ public class UserFeng {
     static HashMap<String, String> users = new HashMap<>();//内存数据库
     static{
         users.put("zyf","123456");
-        users.put("tom","123");
-
+        users.put("Jon","123654");
         users.put("cat",null);
     }
     public static boolean register(String name, String pass) {
@@ -19,7 +18,6 @@ public class UserFeng {
         System.err.println("注册成功!!");
         return true;
     }
-
     public static boolean login(String user, String pass) {
         if (!users.containsKey(user)) {
             System.err.println("用户名不存在");
@@ -32,12 +30,10 @@ public class UserFeng {
         System.err.println("登录成功");
         return true;
     }
-
     private static boolean updatePassword(String name, String oldPass, String newPass) {
         if (!login(name, oldPass)) {
             System.err.println("旧密码错误,修改失败");
             return false;
-
         }
         users.put(name, newPass);
         System.err.println("修改密码成功，请使用新密码登录");
@@ -46,14 +42,14 @@ public class UserFeng {
 
     public static void main(String[] args) {
 
-        register("tom", "123456");
-        register("cat", "666666");
-        System.out.println(login("tom", "123456"));
-        System.out.println(login("tom", "222222"));
+        register("af", "123456");
+        register("yl", "666666");
+        System.out.println(login("af", "111111"));
+        System.out.println(login("yl", "222222"));
         System.out.println(updatePassword("tom", "123456", "654321"));
 
-        System.out.println(login("tom", "123456"));
-        System.out.println(login("tom", "654321"));
+        System.out.println(login("af", "111111"));
+        System.out.println(login("yl", "654321"));
     }
 
 
