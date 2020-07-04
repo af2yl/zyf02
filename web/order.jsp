@@ -66,8 +66,9 @@ session.getAttribute("name")
     </table>
     <div align="center">
         <div >总价为：<jsp:getProperty  name="car" property="total_price"/></div>
-        <button>立即付款</button>
+        <a href="pay.html"><button>提交订单</button></a>
         <a href="index.jsp"><button>取消订单</button></a>
+
     </div>
 </jsp:useBean>
 </body>
