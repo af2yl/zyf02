@@ -13,11 +13,11 @@
 </head>
 <body>
 <jsp:useBean id="car" scope="page" class="AF.CountPrice">
-    <jsp:setProperty name="car" property="num_apple" param="notebook"/>
-    <jsp:setProperty name="car" property="num_orange" param="pencil case"/>
-    <jsp:setProperty name="car" property="num_banana" param="scratch paper"/>
-    <jsp:setProperty name="car" property="num_grapefruit" param="packaging tape"/>
-    <jsp:setProperty name="car" property="num_peach" param="eraser"/>
+    <jsp:setProperty name="car" property="num_notebook" param="notebook"/>
+    <jsp:setProperty name="car" property="num_case" param="case"/>
+    <jsp:setProperty name="car" property="num_paper" param="paper"/>
+    <jsp:setProperty name="car" property="num_tape" param="tape"/>
+    <jsp:setProperty name="car" property="num_eraser" param="eraser"/>
     亲爱的顾客：<%=
 session.getAttribute("name")
 %>;
@@ -31,36 +31,36 @@ session.getAttribute("name")
             <td>1</td>
             <td>笔记本</td>
             <td>￥5.0</td>
-            <td><jsp:getProperty name = "car" property="num_apple" /></td>
-            <td><jsp:getProperty name = "car" property="pri_apple" /></td>
+            <td><jsp:getProperty name = "car" property="num_notebook" /></td>
+            <td><jsp:getProperty name = "car" property="pri_notebook" /></td>
         </tr>
         <tr>
             <td>2</td>
             <td>文具盒</td>
             <td>￥3.0</td>
-            <td><jsp:getProperty name = "car" property="num_orange" /></td>
-            <td><jsp:getProperty name = "car" property="pri_orange" /></td>
+            <td><jsp:getProperty name = "car" property="num_case" /></td>
+            <td><jsp:getProperty name = "car" property="pri_case" /></td>
         </tr>
         <tr>
             <td>3</td>
             <td>草稿纸</td>
             <td>￥2.0</td>
-            <td><jsp:getProperty name = "car" property="num_banana" /></td>
-            <td><jsp:getProperty name = "car" property="pri_banana" /></td>
+            <td><jsp:getProperty name = "car" property="num_paper" /></td>
+            <td><jsp:getProperty name = "car" property="pri_paper" /></td>
         </tr>
         <tr>
             <td>4</td>
             <td>胶带</td>
             <td>￥4.5</td>
-            <td><jsp:getProperty name = "car" property="num_grapefruit" /></td>
-            <td><jsp:getProperty name = "car" property="pri_grapefruit" /></td>
+            <td><jsp:getProperty name = "car" property="num_tape" /></td>
+            <td><jsp:getProperty name = "car" property="pri_tape" /></td>
         </tr>
         <tr>
             <td>5</td>
             <td>橡皮</td>
             <td>￥5.5</td>
-            <td><jsp:getProperty name = "car" property="num_peach" /></td>
-            <td><jsp:getProperty name = "car" property="pri_peach" /></td>
+            <td><jsp:getProperty name = "car" property="num_eraser" /></td>
+            <td><jsp:getProperty name = "car" property="pri_eraser" /></td>
         </tr>
         </tbody>
     </table>

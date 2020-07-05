@@ -19,7 +19,7 @@
     <h1>超级市场</h1>
     <p>开始选购商品并填写自己所购买的数量</p>
     <form action="order.jsp" method="post">
-        <table style="border:1px solid green;" cellpadding="0" border="0" align="center">
+        <table style="border:1px solid green;" cellpadding="0" border="1" align="center">
             <thead>
             <tr>
                 <th>商品编号</th>
@@ -37,21 +37,21 @@
             </tr>
             <tr>
                 <td>2</td>
-                <td><img src="${pageContext.request.contextPath}/images/pencil%20case.jpg" height="100" width="100"/>文具盒</td>
+                <td><img src="${pageContext.request.contextPath}/images/case.jpg" height="100" width="100"/>文具盒</td>
                 <td>￥3.0</td>
-                <td><input type="text" name="pencil case" id="2" placeholder="0"></td>
+                <td><input type="text" name="case" id="2" placeholder="0"></td>
             </tr>
             <tr>
                 <td>3</td>
-                <td><img src="${pageContext.request.contextPath}/images/scratch%20paper.jpg" height="100" width="100"/>草稿纸</td>
+                <td><img src="${pageContext.request.contextPath}/images/paper.jpg" height="100" width="100"/>草稿纸</td>
                 <td>￥2.0</td>
-                <td><input type="text" name="scratch paper" id="3" placeholder="0"></td>
+                <td><input type="text" name="paper" id="3" placeholder="0"></td>
             </tr>
             <tr>
                 <td>4</td>
-                <td><img src="${pageContext.request.contextPath}/images/packaging%20tape.jpg" height="100" width="100"/>胶带</td>
+                <td><img src="${pageContext.request.contextPath}/images/tape.jpg" height="100" width="100"/>胶带</td>
                 <td>￥4.5</td>
-                <td><input type="text" name="packaging tape" id="4" placeholder="0"></td>
+                <td><input type="text" name="tape" id="4" placeholder="0"></td>
             </tr>
             <tr>
                 <td>5</td>
